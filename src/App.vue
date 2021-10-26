@@ -1,28 +1,48 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app-window">
+    <SiderBar :Conversas="Contatos" />
+
+    <Area />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import SiderBar from "./components/Sidebar";
+import Area from "./components/Area";
 export default {
-  name: 'App',
+  name: "App",
+  data() {
+    return {   
+
+      Contatos: {
+      }
+
+
+    };
+  },
   components: {
-    HelloWorld
-  }
-}
+    SiderBar,
+    Area,
+  },
+  methods: {},
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style >
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #d2dbdc;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.app-window {
+  display: flex;
+  height: 100vh;
+  background-color: #ededed;
 }
 </style>
+
+
+
