@@ -4,7 +4,7 @@
 ```
 Demo https://zapclone.herokuapp.com/
 ```
-![image](https://user-images.githubusercontent.com/7068806/185472483-70453090-26e2-4085-b52b-de8495b151df.png)
+![image](https://user-images.githubusercontent.com/7068806/185472652-60672f8d-5ec9-4ec3-94bd-64543b326bc9.png)
 
 
 ## Project setup
